@@ -1,11 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 
-class App extends React.Component {
-  render() {
-    return <h1> React Calculator </h1>;
-  }
-}
+const App = () => <h1> React Calculator </h1>;
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
