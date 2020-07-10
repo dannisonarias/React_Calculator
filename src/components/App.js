@@ -6,7 +6,7 @@ const App = () => {
   const styles = {
     width: '700px',
     height: '100%',
-    margin: "auto",
+    margin: 'auto',
   };
 
   return (
