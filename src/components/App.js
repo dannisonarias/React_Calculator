@@ -1,6 +1,7 @@
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
+import calculate from '../logic/calculate';
 
 const App = () => {
   const styles = {
@@ -8,10 +9,9 @@ const App = () => {
     height: '100%',
     margin: 'auto',
   };
-
   return (
     <div style={styles} id="calculator">
-      <Display />
+      <Display linter={calculate} />
       <ButtonPanel />
     </div>
   );
