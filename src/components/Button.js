@@ -14,12 +14,13 @@ const Button = props => {
     flexShrink: '1',
     backgroundColor: color,
   };
+  const clickHandler = e => props.onClick(e.target.innerText);
   if (wide) {
     styles.flexBasis = 'calc(50%)';
     styles.flexShrink = '1';
   }
   return (
-    <button style={styles} type="button">{ name }</button>
+    <button style={styles} type="button" onClick={clickHandler}>{ name }</button>
   );
 };
 
@@ -29,6 +30,7 @@ Button.propTypes = {
   name: PropTypes.string.isRequired,
   wide: PropTypes.string,
   color: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Button;

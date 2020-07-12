@@ -8,15 +8,14 @@ const operate = (numberOne, numberTwo, operation) => {
     case '-':
       return nOne.minus(nTwo).toString();
     case '+':
-      return (nOne + nTwo);
+      return (nOne.plus(nTwo)).toString();
     case 'X':
       return nOne.times(nTwo).toString();
-    case '÷':
+    case '/':
       if (nTwo === '0') {
         return Infinity;
       }
       return nOne.div(nTwo).toString();
-
     default:
       throw Error(`Unknown operation '${operation}'`);
   }
