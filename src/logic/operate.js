@@ -13,7 +13,7 @@ const operate = (numberOne, numberTwo, operation) => {
       return nOne.times(nTwo).toString();
     case '÷':
       if (nTwo === '0') {
-        return '0';
+        return Infinity;
       }
       return nOne.div(nTwo).toString();
 
