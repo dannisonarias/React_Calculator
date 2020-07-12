@@ -4,8 +4,13 @@ import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
 const App = () => {
+  const styles = {
+    width: '700px',
+    height: '100%',
+    margin: 'auto',
+  };
   return (
-    <div id="calculator">
+    <div style={styles} id="calculator">
       <Display linter={calculate} />
       <ButtonPanel />
     </div>

@@ -9,11 +9,14 @@ const Button = props => {
     color: 'black',
     textAlign: 'center',
     border: '1px solid #5c5858',
-    flex: '1 1 0px',
+    flexGrow: '1',
+    flexBasis: '25%',
+    flexShrink: '1',
     backgroundColor: color,
   };
   if (wide) {
-    styles.flex = '2.037 1 0px';
+    styles.flexBasis = 'calc(50%)';
+    styles.flexShrink = '1';
   }
   return (
     <button style={styles} type="button">{ name }</button>
