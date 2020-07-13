@@ -1,8 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Calculator
+The Calculator app is a modern browser app written in React Javascript. The app provides standard functionality
 
 # Screenshot
 
-![sample](capture.png)
+![sample](captured.gif)
 
 # Live Link
 
