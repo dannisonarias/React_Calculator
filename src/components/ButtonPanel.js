@@ -16,7 +16,7 @@ const ButtonPanel = props => {
     <div>
       <div style={styles}>
         <Button color="#c9c5c5" name="AC" onClick={clickHandler} />
-        <Button color="#c9c5c5" name="+" onClick={clickHandler} />
+        <Button color="#c9c5c5" name="+/-" onClick={clickHandler} />
         <Button color="#c9c5c5" name="%" onClick={clickHandler} />
         <Button name="/" onClick={clickHandler} />
       </div>
